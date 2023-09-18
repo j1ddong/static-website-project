@@ -3,7 +3,11 @@
 	position: sticky;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 30px;
+	margin: 0 2vw;
+}
+.logo {
+	width: 90px;
+	height: 90px;
 }
 .navbar > div {
 	display: flex;
@@ -18,16 +22,95 @@
 	font-weight: 600;
 	font-size: 20px;
 }
+.main-banner {
+	display: inline-block;
+}
 .main-banner-inner {
 	width: 100%;
-	background-color: #09ce20;
-	/* opacity: 0.2; */
-	position: relative;
-	margin: 0 auto;
+	background-color: rgb(9, 206, 32, 0.1);
 }
 .main-banner > img {
-	z-index: 1;
+	margin-top: 50px;
+	margin-left: 10vw;
 	width: 500px;
-	height: auto;
-	margin: auto;
+	height: 500px;
+}
+.main-banner-slide {
+	padding: 10px 0;
+	text-align: center;
+}
+.applyWriter {
+	display: inline-block;
+	position: absolute;
+	font-weight: 600;
+	background-color: #af69ef;
+	margin-top: 60px;
+	margin-left: 50px;
+	width: 400px;
+	height: 200px;
+	transform: skew(5deg);
+}
+.app {
+	display: inline-block;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 330px;
+	width: 400px;
+	height: 200px;
+	background-color: #09ce20;
+	font-weight: 600;
+	transform: skewX(-5deg);
+}
+.main-banner-inner button {
+	background-color: #dcdcdc;
+	border: none;
+	color: white;
+	padding: 4.5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	margin: 4px 2px;
+	border-radius: 50%;
+}
+#main-banner-btn-0 {
+	z-index: 1;
+	background-color: #09ce20;
+}
+.main-banner-inner button:hover {
+	cursor: pointer;
+}
+.days {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+.days > p {
+	display: inline-block;
+	font-weight: 500;
+}
+.days > p:hover {
+	color: #09ce20;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.main-banner-inner {
+		text-align: center;
+	}
+	.main-banner > img {
+		border-radius: 30px;
+		margin-top: 35px;
+		width: 80%;
+		height: 350px;
+	}
+	.navbar p {
+		font-weight: 500;
+		font-size: 15px;
+	}
+	.logo {
+		width: 55px;
+		height: 55px;
+	}
 }
