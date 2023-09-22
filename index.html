@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webtoon</title>
+		<link rel="stylesheet" href="./resources/styles/global.css" />
+		<link rel="stylesheet" href="./resources/styles/index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div>
+					<img
+						class="logo"
+						src="./resources/images/webtoon-svgrepo-com.svg"
+						alt="webtoon logo"
+					/>
+					<a>
+						<p>GENRES</p>
+					</a>
+					<a>
+						<p>POPULAR</p>
+					</a>
+				</div>
+				<a>
+					<p>Log In</p>
+				</a>
+			</nav>
+		</header>
+		<section>
+			<div class="main-banner-inner">
+				<div class="main-banner-container">
+					<div class="main-banner">
+						<img
+							id="main-banner-img"
+							alt="That Which Flows by"
+							src="https://static.wikia.nocookie.net/webtoon/images/5/5d/That_Which_Flows_By_Banner.png/revision/latest?cb=20230727030157"
+						/>
+					</div>
+					<div class="applyWriter">
+						<p>
+							Make comics,<br />
+							reach millions
+						</p>
+					</div>
+					<div class="app">
+						<div>
+							<p>Download</p>
+							<p>our app for</p>
+							<p>free</p>
+						</div>
+						<img alt="qrcode" src="./resources/images/QRcode.PNG" />
+					</div>
+				</div>
+				<div class="main-banner-slide">
+					<button
+						onclick="onMainBannerBtn1Click(event)"
+						id="main-banner-btn-0"
+					></button>
+					<button
+						onclick="onMainBannerBtn2Click(event)"
+						id="main-banner-btn-1"
+					></button>
+					<button
+						onclick="onMainBannerBtn3Click(event)"
+						id="main-banner-btn-2"
+					></button>
+					<button
+						onclick="onMainBannerBtn4Click(event)"
+						id="main-banner-btn-3"
+					></button>
+				</div>
+			</div>
+		</section>
+		<section class="days">
+			<div class="mon" onclick="onDay0Click(event)">
+				<p class="mon-text">MON</p>
+			</div>
+			<div class="tue" onclick="onDay1Click(event)">
+				<p class="tue-text">TUE</p>
+			</div>
+			<div class="wed" onclick="onDay2Click(event)">
+				<p class="wed-text">WED</p>
+			</div>
+			<div class="thu" onclick="onDay3Click(event)">
+				<p class="thu-text">THU</p>
+			</div>
+			<div class="fri" onclick="onDay4Click(event)">
+				<p class="fri-text">FRI</p>
+			</div>
+			<div class="sat" onclick="onDay5Click(event)">
+				<p class="sat-text">SAT</p>
+			</div>
+			<div class="sun" onclick="onDay6Click(event)">
+				<p class="sun-text">SUN</p>
+			</div>
+		</section>
+		<section class="byDaysWebtoonContainer">
+			<div class="byDaysWebtoon">
+				<div id="byDayWebtoon0">
+					<img id="byDayWebtoon0-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon1">
+					<img id="byDayWebtoon1-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon2">
+					<img id="byDayWebtoon2-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon3">
+					<img id="byDayWebtoon3-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon4">
+					<img id="byDayWebtoon4-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon5">
+					<img id="byDayWebtoon5-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon6">
+					<img id="byDayWebtoon6-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon7">
+					<img id="byDayWebtoon7-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon8">
+					<img id="byDayWebtoon8-img" src="" alt="" />
+				</div>
+				<div id="byDayWebtoon9">
+					<img id="byDayWebtoon9-img" src="" alt="" />
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="./resources/js/index.js"></script>
+</html>

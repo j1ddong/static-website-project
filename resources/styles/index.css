@@ -112,15 +112,60 @@
 	display: flex;
 	width: 80%;
 	margin: 0 auto;
-	justify-content: space-around;
+	height: 60px;
 }
-.days > p {
+.days > div {
+	width: 100%;
+	text-align: center;
+}
+.days p {
 	display: inline-block;
 	font-weight: 500;
+	margin: 0;
+	line-height: 60px;
 }
-.days > p:hover {
+.days p:hover {
 	color: #09ce20;
 	cursor: pointer;
+}
+.byDaysWebtoonContainer {
+	background-color: #f4f4f4;
+}
+.byDaysWebtoon {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 40px 0;
+	margin: 0 auto;
+	justify-items: center;
+	width: 1150px;
+}
+.byDaysWebtoon > div {
+	width: 210px;
+	height: 210px;
+	display: inline-block;
+	margin: 18px 10px;
+}
+.byDaysWebtoon > div:hover {
+	cursor: pointer;
+}
+.byDaysWebtoon img {
+	width: 210px;
+	height: 210px;
+}
+@media only screen and (max-width: 1150px) {
+	.byDaysWebtoon {
+		width: 90%;
+	}
+	.byDaysWebtoon img {
+		width: 150px;
+		height: 150px;
+	}
+	.byDaysWebtoon > div {
+		width: 150px;
+		height: 150px;
+		margin: 18px 10px;
+	}
 }
 @media only screen and (max-width: 900px) {
 	.app {
@@ -150,5 +195,16 @@
 	.logo {
 		width: 55px;
 		height: 55px;
+	}
+	.byDaysWebtoon {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		margin: 0 auto;
+		width: 100%;
+		justify-items: center;
+	}
+	.days {
+		width: 95%;
 	}
 }
