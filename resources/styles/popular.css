@@ -1,0 +1,16 @@
+.popular-category {
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popular-category > div {
+	display: inline-block;
+	margin: 0 10px;
+}
+.popular-category > div:hover {
+	font-weight: 600;
+	cursor: pointer;
+}

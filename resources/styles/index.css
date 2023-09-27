@@ -15,7 +15,7 @@
 	gap: 15px;
 }
 .navbar a:hover {
-	color: #09ce20;
+	color: var(--main-color);
 	cursor: pointer;
 }
 .navbar p {
@@ -73,7 +73,7 @@
 	margin-top: 330px;
 	width: 30vw;
 	height: 200px;
-	background-color: #09ce20;
+	background-color: var(--main-color);
 	font-weight: 600;
 	transform: skewX(-5deg);
 	font-size: 22px;
@@ -103,7 +103,7 @@
 }
 #main-banner-btn-0 {
 	z-index: 1;
-	background-color: #09ce20;
+	background-color: var(--main-color);
 }
 .main-banner-inner button:hover {
 	cursor: pointer;
@@ -125,7 +125,7 @@
 	line-height: 60px;
 }
 .days p:hover {
-	color: #09ce20;
+	color: var(--main-color);
 	cursor: pointer;
 }
 .byDaysWebtoonContainer {
