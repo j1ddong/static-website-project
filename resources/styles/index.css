@@ -129,6 +129,16 @@
 	width: 210px;
 	height: 210px;
 }
+@keyframes blink-effect {
+	50% {
+		opacity: 0;
+	}
+}
+#qr {
+	/* name duration timing-function delay iteration-count direction fill-mode; */
+	animation: blink-effect 3s step-end 2s infinite normal forwards;
+	animation-play-state: inherit;
+}
 @media only screen and (max-width: 1150px) {
 	.byDaysWebtoon {
 		width: 90%;
